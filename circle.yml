@@ -1,5 +1,4 @@
-machine:
-  environment:
-    foo: bar
-    baz: 123
+test:
+  override:
+    - exit 0
 
