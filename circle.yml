@@ -4,7 +4,7 @@ machine:
     version: 5.5.21
 dependencies:
   pre:
-    - pecl install mongo
+#    - pecl install mongo
     - echo "memory_limit = 64M" > ~/.phpenv/versions/$(phpenv global)/etc/conf.d/memory.ini
     - sed -i 's/^;//' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini
 test:
